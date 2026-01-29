@@ -1,151 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Professional Excel Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            color: #000;
-            background: #fff;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<title>AsaanAccounts | Professional Excel & Accounting Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            border-bottom: 2px solid #000;
-            padding: 60px 20px;
-            text-align: center;
-        }
+<style>
+:root {
+  --black: #000;
+  --gray: #666;
+  --light-gray: #f5f5f5;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            letter-spacing: 1px;
-        }
+* {
+  box-sizing: border-box;
+}
 
-        header p {
-            max-width: 700px;
-            margin: 20px auto 0;
-            font-size: 16px;
-        }
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: var(--black);
+  background: #fff;
+  line-height: 1.7;
+}
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 60px 20px;
-            border-bottom: 1px solid #ccc;
-        }
+/* ---------- LAYOUT ---------- */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid #ddd;
+}
 
-        .box {
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #000;
-        }
+/* ---------- HEADER ---------- */
+header {
+  padding: 100px 0 80px;
+}
 
-        a.button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 18px;
-            border: 1px solid #000;
-            color: #000;
-            text-decoration: none;
-            font-size: 14px;
-        }
+header h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
 
-        a.button:hover {
-            background: #000;
-            color: #fff;
-        }
+header p {
+  max-width: 720px;
+  font-size: 18px;
+  color: var(--gray);
+}
 
-        footer {
-            text-align: center;
-            padding: 25px 10px;
-            font-size: 13px;
-        }
-    </style>
+/* ---------- TITLES ---------- */
+h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  letter-spacing: -0.3px;
+}
+
+/* ---------- CARDS ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  border: 1px solid #000;
+  padding: 24px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--gray);
+}
+
+/* ---------- BUTTON ---------- */
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-box {
+  border: 1px solid #000;
+  padding: 30px;
+  max-width: 600px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  padding: 30px 0;
+  font-size: 13px;
+  color: var(--gray);
+}
+</style>
 </head>
+
 <body>
 
-<!-- INTRO -->
+<!-- HERO -->
 <header>
-    <h1>Professional Excel Solutions</h1>
+  <div class="container">
+    <h1>AsaanAccounts</h1>
     <p>
-        I provide accurate, well-structured Excel solutions to convert raw and unorganized data
-        into clear financial and management reports.
+      Professional Excel and accounting support focused on accuracy, clarity, and
+      practical business reporting. I help individuals and organizations convert
+      unstructured financial data into reliable, decision-ready Excel files.
     </p>
+  </div>
 </header>
 
 <!-- FREE SAMPLES -->
-<section id="samples">
+<section>
+  <div class="container">
     <h2>Free Excel Samples</h2>
-    <p>Download sample templates to review the quality and structure of my work.</p>
 
-    <div class="box">
-        <strong>Bank Reconciliation Template</strong><br>
-        <a href="Bank-Reconciliation.xlsx" class="button">Download File</a>
-    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Bank Reconciliation Template</h3>
+        <p>Structured reconciliation format suitable for monthly and annual closing.</p>
+        <a class="button" href="Bank-Reconciliation.xlsx">Download</a>
+      </div>
 
-    <div class="box">
-        <strong>Expense Tracker</strong><br>
-        <a href="Expense-Tracker.xlsx" class="button">Download File</a>
-    </div>
+      <div class="card">
+        <h3>Expense Tracker</h3>
+        <p>Clean tracking of daily and monthly expenses with summary view.</p>
+        <a class="button" href="Expense-Tracker.xlsx">Download</a>
+      </div>
 
-    <div class="box">
-        <strong>Fee Comparison Sheet</strong><br>
-        <a href="Fee-Comparison.xlsx" class="button">Download File</a>
+      <div class="card">
+        <h3>Fee Comparison Sheet</h3>
+        <p>Comparison analysis between old and revised fee structures.</p>
+        <a class="button" href="Fee-Comparison.xlsx">Download</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services">
-    <h2>Services</h2>
+<section>
+  <div class="container">
+    <h2>Professional Services</h2>
 
-    <div class="box">
-        <strong>Excel Data Cleaning & Formatting</strong>
-        <p>Correction of errors, removal of duplicates, and professional data structuring.</p>
-    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Excel Data Cleaning</h3>
+        <p>Correction of errors, removal of duplicates, and structured formatting.</p>
+      </div>
 
-    <div class="box">
-        <strong>Bank Reconciliation</strong>
-        <p>Matching bank statements with ledgers and identifying outstanding differences.</p>
-    </div>
+      <div class="card">
+        <h3>Bank Reconciliation</h3>
+        <p>Matching bank statements with ledgers and identifying discrepancies.</p>
+      </div>
 
-    <div class="box">
-        <strong>Excel Reports</strong>
-        <p>Monthly, quarterly, and annual reports with accurate formulas and summaries.</p>
-    </div>
+      <div class="card">
+        <h3>Excel Reporting</h3>
+        <p>Monthly, quarterly, and annual reports with accurate formulas.</p>
+      </div>
 
-    <div class="box">
-        <strong>Custom Excel Templates</strong>
-        <p>Tailor-made Excel formats based on specific business requirements.</p>
+      <div class="card">
+        <h3>Custom Templates</h3>
+        <p>Tailor-made Excel files based on business or institutional needs.</p>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section>
+  <div class="container">
     <h2>Contact</h2>
-    <p>
-        For customized Excel work or professional assistance, contact me below:
-    </p>
 
-    <p>
-        Email: <strong>yourname@gmail.com</strong><br>
-        WhatsApp: <strong>+92XXXXXXXXXX</strong><br>
-        Freelance Profile: <strong>Fiverr / Upwork Link</strong>
-    </p>
+    <div class="contact-box">
+      <p>
+        For customized Excel work, accounting support, or professional reporting,
+        please contact me using the details below.
+      </p>
+
+      <p>
+        <strong>Email:</strong> yourname@gmail.com<br>
+        <strong>WhatsApp:</strong> +92XXXXXXXXXX<br>
+        <strong>Freelance Profile:</strong> Fiverr / Upwork
+      </p>
+    </div>
+  </div>
 </section>
 
 <footer>
-    © 2026 • Professional Excel Services
+  <div class="container">
+    © 2026 AsaanAccounts • Professional Excel & Accounting Services
+  </div>
 </footer>
 
 </body>
